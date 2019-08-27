@@ -3,40 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-.row {
-  display: flex;
-}
+.bg {
+  /* The image used */
+  background-image: url("./images/background.jpg");
 
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 5px;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
 </head>
 <body>
 
-<h2>Images Side by Side</h2>
-<p>How to create side-by-side images with CSS Flexbox:</p>
+<div class="bg">test</div>
 
-<div class="row">
-  <div class="column">
-    <div style="width:100%">some text</div>
-  </div>
-  <div class="column">
-    <img src=".image/goose.jpg" alt="goose" style="width:70%">
-  </div>
-</div>
-
-<a href="./2.html">website</a>
 
 </body>
 </html>
-
-
-
-
