@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
   margin: 0;
 }
 
+.btn-group button {
+  background-color: darkblue; /* Green background */
+  border: 1px solid rgb(10, 2, 77); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  opacity: 0.6;
+}
 
 .bg {
   /* The image used */
@@ -68,17 +92,23 @@ h2
 <body>
 
 
+
+
   <div class="bg">
     <div class="overlaytext">
       <h1><i>Hello!</h1></i>
       <h2><i>My name is Vita</h2></i>
       <a href="https://www.facebook.com/vitaliias" class="fa fa-facebook"></a>
       <a href="https://www.linkedin.com/in/vitaliia-sos-5236a736/" class="fa fa-linkedin"></a>
+
+      <div class="btn-group">
+          <button onclick="window.location.href='./Ukraine.html'">Ukraine</button>
+          <button onclick="window.location.href='./My hobbies.html'">My hobbies</button>
+          <button onclick="window.location.href='./borshch.html'">Recipe</button>
+        </div>
     
     </div>
   </div>
-
-  
 
 
 </body>
