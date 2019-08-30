@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("me.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+#mySidenav a {
+  position: absolute;
+  left: -500px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+/*#mySidenav a:hover {
+  left: 0;
+}*/
+#Ukraine {
+  top: 50px;
+  background-color: #D3D3D3;
+}
+#hobbies {
+  top: 110px;
+  background-color: #778899;
+}
+#recipe {
+  top: 170px;
+  background-color: #696969;
+}
+#page {
+  top: 230px;
+  background-color: #000000;
+}
+.overlaytext {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #228B22;
+}
+h1
+{
+  font-size: 50px;
+}
+h2
+{
+  font-size: 40px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: black;
+  color: white;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <div class="bg">
+    <div class="overlaytext">
+      <h1><i>Hey BE-IT!</h1></i>
+      <h2><i>My name is Michal</h2></i>
+      <a href="https://www.facebook.com/miso.y.nguyen" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/miketheforeigner/" class="fa fa-instagram"></a>
+      <div id="mySidenav" class="sidenav">
+          <a href="slov.html" id="Ukraine">Slovakia</a>
+          <a href="hobs.html" id="hobbies">Hobbies</a>
+          <a href="favfood.html" id="recipe">Fav Food</a>
+          <a href="index.html" id="page">Main Page</a>
+        </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
